@@ -6,6 +6,7 @@ import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
 import PageNotFound from './pages/PageNotFound';
 import BaseLayout from './pages/_baseLayout';
+import Navbar from './components/Navbar';
 
 
 
@@ -16,6 +17,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
+
+        <Navbar />
+
         <Routes>
             <Route path="/" element={<BaseLayout />}>
                 <Route index element={<HomePage />} />

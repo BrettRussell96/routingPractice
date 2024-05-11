@@ -8,7 +8,7 @@ import PageNotFound from './pages/PageNotFound';
 import BaseLayout from './pages/_baseLayout';
 
 
-const someRouterBlahBlah = createBrowserRouter([
+const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <BaseLayout />,
@@ -19,11 +19,11 @@ const someRouterBlahBlah = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: "/about",
+        path: "about",
         element: <AboutPage />
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <ContactPage />
       }
     ]
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-    <RouterProvider router={someRouterBlahBlah} />
+    <RouterProvider router={appRouter} />
     </> 
   )
 }
